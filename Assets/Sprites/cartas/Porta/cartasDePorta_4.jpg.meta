@@ -1,0 +1,906 @@
+fileFormatVersion: 2
+guid: 68c5280128b7c124cbf506c4053e7911
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cartasDePorta_4_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 528
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d0fa7eab127b34b990a5fc3e81e9bf
+      internalID: -401943906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_1
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 528
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a372f010ac203c4b8e33250567dea85
+      internalID: 733413698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_2
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 528
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04bd1135579bc4a40b9f2cc612f2604c
+      internalID: 753696556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_3
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 528
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9b1f5e76861394c9c71cadc8febf5d
+      internalID: 91267465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_4
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 528
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc8c120c9ba9e045a0f3110085db4ce
+      internalID: -1529464114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_5
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 528
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597c93509490b6543ac9e40e1261167d
+      internalID: 1041691838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_6
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 528
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97acc1bb47f88a4f86ccf4336771af8
+      internalID: 1870642338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_7
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 528
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e6b1373f479fa47bd2003b1cdd61b7
+      internalID: 1611497120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_8
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 528
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80c13513a667694aa032d5f9792ff5a
+      internalID: -141589391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_9
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 352
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b374d63dcff884ab9423d7ab5a4ceb
+      internalID: -1666398934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_10
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 352
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b635d117b93434cab841d50210f602
+      internalID: -686102299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_11
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 352
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4631f017937211e48a72b3705d04f42c
+      internalID: -240356424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_12
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 352
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339d6a4698c8d8a4cabb6d74dd6993c2
+      internalID: 1752396671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_13
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 352
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cad22d5a3fc85d499a196dd350018bb
+      internalID: -1885988483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_14
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 352
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48755d9cbde3af84781261ef92c90c5b
+      internalID: 1720017533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_15
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 352
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3ef39dc5d2af64caf06fd16cf6ad87
+      internalID: 735566090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_16
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 352
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04248a18fdc56b7409ca06b90c8e04cd
+      internalID: -1184141465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_17
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 352
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661a02ec8b14d974fb4014fc39a8f992
+      internalID: 735265726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_18
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 176
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e5d901258ecf848bb99c747f1943d3
+      internalID: 1242729930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_19
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 176
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ee4e312003a7446a57b627066c22a1
+      internalID: 20319884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_20
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 176
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07667146ba71bc84587ddd5a031005d3
+      internalID: -639716190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_21
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 176
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1c874a5eb27224aac1a6f5aa633ab6
+      internalID: 1203993780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_22
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 176
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394aa57481aea0f47930af8a80c4ca3f
+      internalID: 655037612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_23
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 176
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03873d271a2631e46b42d5b3c155f80f
+      internalID: -854803405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_24
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 176
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4c0a8fefe90aa41b5c7e8d9302a98c
+      internalID: -603999945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_25
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 176
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0154c0222762f2d42b36401e481bcc71
+      internalID: -384300436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_26
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 176
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f776c1cb30bbc647a66e0ce2fb1e681
+      internalID: -1327426030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_27
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf9cfbecba20594a895cf95b9dde670
+      internalID: -1094278646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_28
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 0
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06e925ee435d1043871fbd1972daa33
+      internalID: -1359332116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_29
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 0
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e3cbb2e72584b45bec100641a99c14
+      internalID: 1671381637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_30
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 0
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8205e4e07d73db49a4b9464ffde8200
+      internalID: 1921077892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_31
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 0
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e65d4c2ad75ce4d939e2d33a8a1d5d
+      internalID: 1315704819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_32
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 0
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8971414f07cb8c045a6292a9e0d7ff1f
+      internalID: -1582547545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_33
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 0
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fad9e0c495755d47b45c313ab1c6d61
+      internalID: -616006687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_34
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 0
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe5da4bbb176b243af8d2330e12ea00
+      internalID: -1273866906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDePorta_4_35
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 0
+        width: 112.77778
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf5f96a3c0e2ae41941b41c3ddbef05
+      internalID: -1921295958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      cartasDePorta_4_0: -401943906
+      cartasDePorta_4_1: 733413698
+      cartasDePorta_4_10: -686102299
+      cartasDePorta_4_11: -240356424
+      cartasDePorta_4_12: 1752396671
+      cartasDePorta_4_13: -1885988483
+      cartasDePorta_4_14: 1720017533
+      cartasDePorta_4_15: 735566090
+      cartasDePorta_4_16: -1184141465
+      cartasDePorta_4_17: 735265726
+      cartasDePorta_4_18: 1242729930
+      cartasDePorta_4_19: 20319884
+      cartasDePorta_4_2: 753696556
+      cartasDePorta_4_20: -639716190
+      cartasDePorta_4_21: 1203993780
+      cartasDePorta_4_22: 655037612
+      cartasDePorta_4_23: -854803405
+      cartasDePorta_4_24: -603999945
+      cartasDePorta_4_25: -384300436
+      cartasDePorta_4_26: -1327426030
+      cartasDePorta_4_27: -1094278646
+      cartasDePorta_4_28: -1359332116
+      cartasDePorta_4_29: 1671381637
+      cartasDePorta_4_3: 91267465
+      cartasDePorta_4_30: 1921077892
+      cartasDePorta_4_31: 1315704819
+      cartasDePorta_4_32: -1582547545
+      cartasDePorta_4_33: -616006687
+      cartasDePorta_4_34: -1273866906
+      cartasDePorta_4_35: -1921295958
+      cartasDePorta_4_4: -1529464114
+      cartasDePorta_4_5: 1041691838
+      cartasDePorta_4_6: 1870642338
+      cartasDePorta_4_7: 1611497120
+      cartasDePorta_4_8: -141589391
+      cartasDePorta_4_9: -1666398934
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
