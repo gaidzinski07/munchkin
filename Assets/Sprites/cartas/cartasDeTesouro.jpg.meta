@@ -1,0 +1,1633 @@
+fileFormatVersion: 2
+guid: a874b440ac039ec4aabdde87951677e6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cartasDeTesouro_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4854
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f579211e7442448b5a30555bffe8d3
+      internalID: -1366575545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 4854
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88bd8ce33a155c545b1ad9bd54e1a3d4
+      internalID: -1104794889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 4854
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53fabb028d594d64d8d6a34bc7acd9a8
+      internalID: -904746876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 4854
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f3e89cd5df2df489fbdfe7d11ed47a
+      internalID: -1466178496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 4854
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3d6f4216208fc4da0ec626cf9c2e5d
+      internalID: 1992951170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 4854
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ea3998bca399a4e861bd683f31d657
+      internalID: -155537554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_6
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4854
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b467cb3230cb7439f265fc03c98a0b
+      internalID: 1066457069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_7
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 4854
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9560057b0ee36be449ad16aba69ab227
+      internalID: 1256738523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_8
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 4854
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9673b22dc243a24cac4d1f17910cf40
+      internalID: 1315887376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_9
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 4854
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 290a6f43a3a26e64da4f84f9faa713aa
+      internalID: 1230286774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4045
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b7b3f397625c349911e42f10ae804e
+      internalID: -2127926624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_11
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 4045
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbfe88746501de14db97486aae8f3bea
+      internalID: -1556644474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_12
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 4045
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 873025ec923c8ec48a766eab2c6b7288
+      internalID: 1193888531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_13
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 4045
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bceb8f13561fd54a84c03f3861d5e8d
+      internalID: -2048808959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_14
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 4045
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a00eb8f877ab16b44a239e6ac649d280
+      internalID: -829620803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_15
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 4045
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872e4f7b5d379cb4f91c3da840d136b8
+      internalID: -1262164230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_16
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4045
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98157707c22a82d4d97ca4c0fdaec704
+      internalID: -733162649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_17
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 4045
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8646dd7ce8c994a8d973e9c297f6cb
+      internalID: -503102587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_18
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 4045
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc6e9e2660884d4d89c59e6fc8b6d10
+      internalID: -2015420347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_19
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 4045
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff07a1066b95544d85e56aa2257206a
+      internalID: -2076619571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3236
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7ba14b0430d6048a86ca386af1eca0
+      internalID: -708649790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_21
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3236
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e6dac3145b112498736e4f6bbd2448
+      internalID: 706260451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_22
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3236
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdef68acb5ca2945b2182d147c4a4a2
+      internalID: -113960121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_23
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3236
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae49bb01d061cb54da319463d98f7d84
+      internalID: 1464541739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_24
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3236
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c294f3f98e80a4ea8baffa4b8458a1
+      internalID: 201221995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_25
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3236
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f298b4f2524057642b2207ee450607df
+      internalID: 1835103704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_26
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3236
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88c1a9b2bceb3f4b964ea61bc8368ee
+      internalID: -271529432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_27
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 3236
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3603edc54f74554fa1f963e615c394d
+      internalID: -96743422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_28
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 3236
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc03ed4e7db4b794d8b81a96d111c126
+      internalID: 1800847144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_29
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 3236
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45a089d096515d4e8f9818488a14a3e
+      internalID: 1772373160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2427
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b128c04cd9e3dca4799411c16d466ee6
+      internalID: 888004415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_31
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2427
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b1a2ffd1efbe2449ab932e5f10f614
+      internalID: 1905202786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_32
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2427
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fddc18bca207804c91f217fa0f55149
+      internalID: 1001013169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_33
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2427
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471ebeb21eb0f5e449938770bf050998
+      internalID: -1413507542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_34
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2427
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba80681ea2c1784a841e296937e777e
+      internalID: 1044047510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_35
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2427
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf20bfcd3b19714db660b5d1c327ddf
+      internalID: 529279214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_36
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2427
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04461568dd78cfb41965c961da9a4a57
+      internalID: -1157402267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_37
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 2427
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dee09b94661c4c4f876fd88f62f99b0
+      internalID: 1199145929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_38
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2427
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2d9ad4e5b73664c9d91344ef5f16de
+      internalID: -491004945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_39
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 2427
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de2112210ce84d4886c1d15a14b9d59
+      internalID: 1745028516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1618
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56905b603bc2404b9f812cba09d6f8b
+      internalID: 1175948956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_41
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1618
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f1715847971b54d9952bbb35c57653
+      internalID: 1300971197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_42
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1618
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89564b04ada1104daad93fc5c1f9ee7
+      internalID: 999364063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_43
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1618
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b705d1f6d5e75540b8f2874f8b134ad
+      internalID: -342331364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_44
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1618
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6610ba6274b85634685fc4e88a4a69b5
+      internalID: 412315423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_45
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1618
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521a9d3ebdbf478459b3dc4b54f5316b
+      internalID: 119308158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_46
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1618
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1704d8e2b320e47af1536c1fe65a09
+      internalID: -532000800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_47
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1618
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27703e05eb3f324685116c5aedbfcca
+      internalID: -740619187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_48
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1618
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f0f9625f329644b9904dc3884764f3
+      internalID: -123336174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_49
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 1618
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eba4a0b868249e438169cc926eba968
+      internalID: 533379138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 809
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a968897c79d221249847fbf2177b65ab
+      internalID: -542152295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_51
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 809
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37d922e61ec1904583910b227a47e8b
+      internalID: -1215309978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_52
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 809
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69ccbf7eaddabf45a0e5d34de1551ee
+      internalID: 1765257585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_53
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 809
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5bfab2d5952a549a0c046af4ba361d
+      internalID: -1914331391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_54
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 809
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec4ad25f121a84744ad1dfb8555e11ee
+      internalID: 1178224342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_55
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 809
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254a679cc2fb87c4fb6630d034810941
+      internalID: 2101961982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_56
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 809
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38daf54dc3196cf43b79b248db34c7a3
+      internalID: -2142747711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_57
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 809
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7258181d7738029479eec68dded47c5d
+      internalID: 95511266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_58
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 809
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a607946b7cbee1a4e8f48558b4124d4a
+      internalID: -1862228888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_59
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 809
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2012304aef6c81d40b065da608ce6d95
+      internalID: 1963427412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3a15c003f0cd84b8dd382fb3e15646
+      internalID: -1898030339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_61
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6dd699bcad7d74298082847aea04fa
+      internalID: -1491047523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_62
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e44f3871a2c9ce48aa4563e9ce08e5e
+      internalID: -192263635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_63
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfeda1d19f1fea24fb8e7ce0454e5853
+      internalID: 981023175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_64
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4cf8b4d70c358947b2da85283951efe
+      internalID: 1354285446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_65
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 0
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d37e1dfe3339a459ad9679d54b3aad
+      internalID: 1538708791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_66
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc14f7c4f2fb7242bc1142c76ccb48e
+      internalID: 309463939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_67
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 0
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b3615ad3853ff48a7d5f1e8db40a6e
+      internalID: -1799778002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro_68
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 0
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c601eb20b28a9ec4cbe1a261649c8b48
+      internalID: 39872685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      cartasDeTesouro_0: -1366575545
+      cartasDeTesouro_1: -1104794889
+      cartasDeTesouro_10: -2127926624
+      cartasDeTesouro_11: -1556644474
+      cartasDeTesouro_12: 1193888531
+      cartasDeTesouro_13: -2048808959
+      cartasDeTesouro_14: -829620803
+      cartasDeTesouro_15: -1262164230
+      cartasDeTesouro_16: -733162649
+      cartasDeTesouro_17: -503102587
+      cartasDeTesouro_18: -2015420347
+      cartasDeTesouro_19: -2076619571
+      cartasDeTesouro_2: -904746876
+      cartasDeTesouro_20: -708649790
+      cartasDeTesouro_21: 706260451
+      cartasDeTesouro_22: -113960121
+      cartasDeTesouro_23: 1464541739
+      cartasDeTesouro_24: 201221995
+      cartasDeTesouro_25: 1835103704
+      cartasDeTesouro_26: -271529432
+      cartasDeTesouro_27: -96743422
+      cartasDeTesouro_28: 1800847144
+      cartasDeTesouro_29: 1772373160
+      cartasDeTesouro_3: -1466178496
+      cartasDeTesouro_30: 888004415
+      cartasDeTesouro_31: 1905202786
+      cartasDeTesouro_32: 1001013169
+      cartasDeTesouro_33: -1413507542
+      cartasDeTesouro_34: 1044047510
+      cartasDeTesouro_35: 529279214
+      cartasDeTesouro_36: -1157402267
+      cartasDeTesouro_37: 1199145929
+      cartasDeTesouro_38: -491004945
+      cartasDeTesouro_39: 1745028516
+      cartasDeTesouro_4: 1992951170
+      cartasDeTesouro_40: 1175948956
+      cartasDeTesouro_41: 1300971197
+      cartasDeTesouro_42: 999364063
+      cartasDeTesouro_43: -342331364
+      cartasDeTesouro_44: 412315423
+      cartasDeTesouro_45: 119308158
+      cartasDeTesouro_46: -532000800
+      cartasDeTesouro_47: -740619187
+      cartasDeTesouro_48: -123336174
+      cartasDeTesouro_49: 533379138
+      cartasDeTesouro_5: -155537554
+      cartasDeTesouro_50: -542152295
+      cartasDeTesouro_51: -1215309978
+      cartasDeTesouro_52: 1765257585
+      cartasDeTesouro_53: -1914331391
+      cartasDeTesouro_54: 1178224342
+      cartasDeTesouro_55: 2101961982
+      cartasDeTesouro_56: -2142747711
+      cartasDeTesouro_57: 95511266
+      cartasDeTesouro_58: -1862228888
+      cartasDeTesouro_59: 1963427412
+      cartasDeTesouro_6: 1066457069
+      cartasDeTesouro_60: -1898030339
+      cartasDeTesouro_61: -1491047523
+      cartasDeTesouro_62: -192263635
+      cartasDeTesouro_63: 981023175
+      cartasDeTesouro_64: 1354285446
+      cartasDeTesouro_65: 1538708791
+      cartasDeTesouro_66: 309463939
+      cartasDeTesouro_67: -1799778002
+      cartasDeTesouro_68: 39872685
+      cartasDeTesouro_69: 133759388
+      cartasDeTesouro_7: 1256738523
+      cartasDeTesouro_8: 1315887376
+      cartasDeTesouro_9: 1230286774
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

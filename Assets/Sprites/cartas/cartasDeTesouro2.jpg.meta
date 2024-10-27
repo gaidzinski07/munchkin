@@ -1,0 +1,310 @@
+fileFormatVersion: 2
+guid: 20c632c7184a4dc469344961e13908c8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cartasDeTesouro2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4854
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799f92e4a4a815441961b22d17f30ffa
+      internalID: -1312494403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro2_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 4854
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040320b4176892148a12dbfcf46aa357
+      internalID: -598361442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro2_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 4854
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd50115032211024ea9f762c0a0f47ca
+      internalID: 1374267046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro2_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 4854
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4655b8bb46b77840a7e3e4c3f4ea5a1
+      internalID: -1857570948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro2_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 4854
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d5d38e2fefc5148a10b0d01c245988
+      internalID: -2081042436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartasDeTesouro2_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 4854
+        width: 500
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc73d82a13f4f0c43ae526bca75522b3
+      internalID: 2002089199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      cartasDeTesouro2_0: -1312494403
+      cartasDeTesouro2_1: -598361442
+      cartasDeTesouro2_10: 60894586
+      cartasDeTesouro2_11: 215163213
+      cartasDeTesouro2_12: 751178176
+      cartasDeTesouro2_13: 892363304
+      cartasDeTesouro2_14: 1048014596
+      cartasDeTesouro2_15: 665234401
+      cartasDeTesouro2_16: 490489558
+      cartasDeTesouro2_17: -1197231016
+      cartasDeTesouro2_18: -180285269
+      cartasDeTesouro2_19: -1865184261
+      cartasDeTesouro2_2: 1374267046
+      cartasDeTesouro2_20: 1409006077
+      cartasDeTesouro2_21: -1427006887
+      cartasDeTesouro2_22: 1708064512
+      cartasDeTesouro2_23: 1041702061
+      cartasDeTesouro2_24: 1740695034
+      cartasDeTesouro2_25: 829006277
+      cartasDeTesouro2_26: -1898304066
+      cartasDeTesouro2_27: -1577960321
+      cartasDeTesouro2_28: 521044997
+      cartasDeTesouro2_29: 787457150
+      cartasDeTesouro2_3: -1857570948
+      cartasDeTesouro2_30: -1688349028
+      cartasDeTesouro2_31: -1630896508
+      cartasDeTesouro2_32: -674932104
+      cartasDeTesouro2_33: 364053850
+      cartasDeTesouro2_34: -936668242
+      cartasDeTesouro2_35: -1056231633
+      cartasDeTesouro2_36: -546973714
+      cartasDeTesouro2_37: -726472716
+      cartasDeTesouro2_38: -803369346
+      cartasDeTesouro2_39: -1898516264
+      cartasDeTesouro2_4: -2081042436
+      cartasDeTesouro2_40: -1394238571
+      cartasDeTesouro2_41: 1719394310
+      cartasDeTesouro2_42: 688010975
+      cartasDeTesouro2_43: -1474348546
+      cartasDeTesouro2_44: 1720932002
+      cartasDeTesouro2_45: 393217618
+      cartasDeTesouro2_46: -248982544
+      cartasDeTesouro2_47: -398611341
+      cartasDeTesouro2_48: 814011789
+      cartasDeTesouro2_49: 764023757
+      cartasDeTesouro2_5: 2002089199
+      cartasDeTesouro2_50: -872617298
+      cartasDeTesouro2_51: 1698961057
+      cartasDeTesouro2_52: -1039696371
+      cartasDeTesouro2_53: -600549374
+      cartasDeTesouro2_54: 52703588
+      cartasDeTesouro2_55: -475070873
+      cartasDeTesouro2_56: 330923780
+      cartasDeTesouro2_57: -1173434745
+      cartasDeTesouro2_58: 510969658
+      cartasDeTesouro2_59: -1556609572
+      cartasDeTesouro2_6: -1345233191
+      cartasDeTesouro2_60: -1144424969
+      cartasDeTesouro2_61: 1360249504
+      cartasDeTesouro2_62: -925885049
+      cartasDeTesouro2_63: 1123934249
+      cartasDeTesouro2_64: 1048073760
+      cartasDeTesouro2_65: -712753708
+      cartasDeTesouro2_66: -377199245
+      cartasDeTesouro2_67: -903141352
+      cartasDeTesouro2_68: -1953719042
+      cartasDeTesouro2_69: 103986878
+      cartasDeTesouro2_7: -1159781611
+      cartasDeTesouro2_8: 169228454
+      cartasDeTesouro2_9: 2100614582
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
