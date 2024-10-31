@@ -11,7 +11,7 @@ public enum TipoBaralhoEnum
 public class Baralho : MonoBehaviour
 {
     [SerializeField]
-    private List<Carta> cartas;
+    private List<Carta> cartas = new List<Carta>();
     [SerializeField]
     private TipoBaralhoEnum tipoBaralho = TipoBaralhoEnum.FECHADO;
 
@@ -47,19 +47,23 @@ public class Baralho : MonoBehaviour
         cartas.Add(carta);
     }
 
-    //mudar Retorno para Carta
-    public void retirarCarta()
+    public Carta retirarCarta()
     {
         Carta carta = cartas[0];
         cartas.Remove(carta);
         onRetirarCarta(carta);
-        //return carta;
+        return carta;
     }
 
     private void onRetirarCarta(Carta carta)
     {
         Transform cartaTransform = carta.transform;
         cartaTransform.position = transform.position + new Vector3(4f, 0, 0);
+    }
+
+    public void esvaziar()
+    {
+        cartas.Clear();
     }
 
 }
