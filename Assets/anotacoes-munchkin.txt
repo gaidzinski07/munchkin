@@ -1,0 +1,49 @@
+-----CARTAS DE PORTA-----
+
+Montro:
+-Coisa Ruim (metodo)
+-Recompensa
+-Nivel
+-BonusVsClasse
+-BonusVsRaça
+EX.: CAVALO MORTO-VIVO
+
+Classe:
+-Vantagens
+EX.: GUERREIRO
+
+Raça
+-Vantagens
+EX.: HALFLING
+
+ModificadorDeBatalha:
+-BonusParaOMonstro
+-RecompensaBonus
+EX.: ANCIÃO
+
+ModificadorParaJogador:
+-Modificação
+EX.: MESTIÇO
+
+
+
+
+
+-----CARTAS DE TESOURO-----
+ModificadorDeBatalha:
+-Bonus
+-UsoUnico
+
+Equipamento:
+-preco
+-BonusBatalha
+-BonusFuga
+
+
+
+
+
+
+
+
+

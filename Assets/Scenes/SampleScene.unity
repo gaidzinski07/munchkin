@@ -905,7 +905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 7264231779225442989, guid: cf13745f8b9150c4882b9a37d9e5d3d5, type: 3}
-  maxPlayers: 6
+  maxPlayers: 4
   minPlayers: 3
   jogadores: []
   baralhoDePortas: {fileID: 1135172994}
@@ -1872,8 +1872,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4281094004
+  m_fontColor: {r: 0.454902, g: 0.30980393, b: 0.17254902, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

@@ -23,7 +23,7 @@ public class Jogo : MonoBehaviour
 
     public void adicionarJogador(string nick)
     {
-        if(jogadores.Count >= 6)
+        if(jogadores.Count >= maxPlayers)
         {
             Debug.LogWarning("Impossível adicionar novos jogadores. Limite atingido...");
             return;
