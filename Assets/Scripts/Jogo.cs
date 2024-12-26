@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Jogo : MonoBehaviour
 {
+    /**Singleton**/
+    public static Jogo Instance;
+
     [SerializeField]
     private GameObject playerPrefab;
     [SerializeField, Range(0, 6)]
@@ -20,8 +23,19 @@ public class Jogo : MonoBehaviour
     private Baralho baralhoDescartePortas;
     [SerializeField]
     private Baralho baralhoDescarteTesouros;
+    private bool podeIniciar = false;
 
-    public void adicionarJogador(string nick)
+    [Header("Game Events")]
+    [SerializeField]
+    private GameEvent evntIniciarJogo;
+
+    private void Start()
+    {
+        if (Instance != null) Destroy(gameObject);
+        Instance = this;
+    }
+
+    public void AdicionarJogador(string nick, GeneroEnum genero)
     {
         if(jogadores.Count >= maxPlayers)
         {
@@ -34,9 +48,25 @@ public class Jogo : MonoBehaviour
             return;
         }
         Jogador jogador = Instantiate(playerPrefab, Vector3.zero, Quaternion.identity).GetComponent<Jogador>();
-        jogador.setNick(nick);
+        jogador.createPlayer(nick, genero);
         jogador.resetPlayer();
         jogadores.Add(jogador);
+        podeIniciar = jogadores.Count >= minPlayers;
+    }
+
+    public List<Jogador> GetJogadores()
+    {
+        return jogadores;
+    }
+
+    public bool GetPodeIniciar()
+    {
+        return podeIniciar;
+    }
+
+    public void IniciarPartida()
+    {
+        evntIniciarJogo.Raise(this, null);
     }
 
 }

@@ -2,10 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum GeneroEnum
+{
+    FEMININO = 0, 
+    MASCULINO = 1
+}
+
 public class Jogador : MonoBehaviour
 {
     [SerializeField]
     private string nick;
+    [SerializeField]
+    private GeneroEnum genero;
     [SerializeField, Range(0, 10)]
     private int level;
     [SerializeField, Range(0, 1000)]
@@ -23,9 +31,10 @@ public class Jogador : MonoBehaviour
     [SerializeField]
     private CartaDeMonstroAmigavel pet;
 
-    public void setNick(string nick)
+    public void createPlayer(string nick, GeneroEnum genero)
     {
         this.nick = nick;
+        this.genero = genero;
     }
     public string getNick()
     {

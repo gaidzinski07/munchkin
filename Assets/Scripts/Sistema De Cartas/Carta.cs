@@ -9,9 +9,7 @@ public abstract class Carta : MonoBehaviour
     [SerializeField]
     private string descricao;
 
-
     public abstract void executarAcao();
-
 
     public string getNome()
     {
