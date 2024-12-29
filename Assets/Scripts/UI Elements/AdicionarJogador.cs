@@ -29,7 +29,7 @@ public class AdicionarJogador : MonoBehaviour
         List<Jogador> jogs = Jogo.Instance.GetJogadores();
         for(int i = 0; i < jogs.Count; i++)
         {
-            lista += jogs[i].getNick() + "\n";
+            lista += jogs[i].GetNick() + "\n";
         }
         txtListaJogadores.text = lista;
     }

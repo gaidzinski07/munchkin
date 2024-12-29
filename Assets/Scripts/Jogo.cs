@@ -48,8 +48,8 @@ public class Jogo : MonoBehaviour
             return;
         }
         Jogador jogador = Instantiate(playerPrefab, Vector3.zero, Quaternion.identity).GetComponent<Jogador>();
-        jogador.createPlayer(nick, genero);
-        jogador.resetPlayer();
+        jogador.CreatePlayer(nick, genero);
+        jogador.ResetPlayer();
         jogadores.Add(jogador);
         podeIniciar = jogadores.Count >= minPlayers;
     }

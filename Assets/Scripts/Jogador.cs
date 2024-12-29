@@ -12,44 +12,55 @@ public class Jogador : MonoBehaviour
 {
     [SerializeField]
     private string nick;
-    [SerializeField]
-    private GeneroEnum genero;
-    [SerializeField, Range(0, 10)]
+    [SerializeField, Range(1, 10)]
     private int level;
     [SerializeField, Range(0, 1000)]
     private int moedas;
     [SerializeField]
-    private CartaDeClasse classe;
-    [SerializeField]
-    private CartaDeRaca raca;
-    [SerializeField]
-    private Dictionary<ParteDoCorpoEnum, CartaDeEquipamento> equipamentos = new Dictionary<ParteDoCorpoEnum, CartaDeEquipamento>();
-    [SerializeField]
-    private List<ParteDoCorpoEnum> partesDoCorpo;
+    private BuildJogador build = new BuildJogador();
     [SerializeField]
     private Baralho mao;
-    [SerializeField]
-    private CartaDeMonstroAmigavel pet;
 
-    public void createPlayer(string nick, GeneroEnum genero)
+    public void CreatePlayer(string nick, GeneroEnum genero)
     {
         this.nick = nick;
-        this.genero = genero;
+        this.build.SetGenero(genero);
     }
-    public string getNick()
+    public string GetNick()
     {
         return this.nick;
     }
 
-    public void resetPlayer()
+    public int GetLevel()
+    {
+        return this.level;
+    }
+
+    public BuildJogador GetBuild()
+    {
+        return build;
+    }
+
+    public void ResetPlayer()
     {
         level = 0;
         moedas = 0;
-        classe = null;
-        raca = null;
-        equipamentos.Clear();
+        this.build = new BuildJogador();
         if (mao != null) mao.esvaziar();
-        pet = null;
+    }
+
+    public void AlterarNivel(int niveis)
+    {
+        level += niveis;
+        if(level < 1)
+        {
+
+        }
+    }
+
+    public void VenderCarta()
+    {
+
     }
 
 }

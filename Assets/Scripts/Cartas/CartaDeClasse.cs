@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class CartaDeTesouro : Carta
+public class CartaDeClasse : Carta
 {
-    public override void executarAcao()
+    public override void ExecutarAcao()
     {
         throw new System.NotImplementedException();
     }
+    
 }

@@ -5,6 +5,5 @@ using UnityEngine;
 public enum TamanhoEnum
 {
     PEQUENO,
-    MEDIO,
     GRANDE
 }
