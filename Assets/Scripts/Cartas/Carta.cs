@@ -3,14 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public enum EstadoSelecaoCarta
+{
+    NONE = 0,
+    JOGADOR = 1,
+    MONSTRO = 2
+}
+
 public abstract class Carta : MonoBehaviour
 {
     [SerializeField]
-    private string nome;
+    protected string nome;
     [SerializeField]
-    private string descricao;
+    protected string descricao;
     [SerializeField]
-    private List<Efeito> efeitos;    
+    protected List<Efeito> efeitos;
+    protected EstadoSelecaoCarta estadoSelecao = EstadoSelecaoCarta.NONE;
     public abstract void ExecutarAcao();
 
     public string GetNome()
@@ -33,6 +42,11 @@ public abstract class Carta : MonoBehaviour
     public List<Efeito> GetEfeitos()
     {
         return efeitos;
+    }
+
+    public EstadoSelecaoCarta GetEstadoSelecao()
+    {
+        return estadoSelecao;
     }
 
     public override bool Equals(object obj)

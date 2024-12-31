@@ -2,6 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public class BatalhaDTO
+{
+    public Jogador jogador;
+    public CartaDeMonstro cartaDeMonstro;
+    public List<Carta> modificadoresProJogador;
+    public List<Carta> modificadoresProMonstro;
+}
+
 public class Batalha : MonoBehaviour
 {
     [SerializeField]
@@ -9,11 +17,24 @@ public class Batalha : MonoBehaviour
     [SerializeField]
     private CartaDeMonstro monstro;
     [SerializeField]
-    private List<Carta> modificadoresProJogador;
+    private List<Carta> modificadoresProJogador = new List<Carta>();
     [SerializeField]
-    private List<Carta> modificadoresProMonstro;
+    private List<Carta> modificadoresProMonstro = new List<Carta>();
     private int nivelJogador, nivelMonstro;
     private Dado dado = new Dado(6);
+
+    private void Start()
+    {
+        Jogo jogo = Jogo.Instance;
+
+        BatalhaDTO dto = jogo.GetBatalhaDTO();
+
+        jogador = dto.jogador;
+        monstro = dto.cartaDeMonstro;
+        modificadoresProJogador = dto.modificadoresProJogador;
+        modificadoresProMonstro = dto.modificadoresProMonstro;
+
+    }
 
     //True = jogador ganhou
     //False = jogador perdeu
@@ -78,18 +99,31 @@ public class Batalha : MonoBehaviour
 
         BuildJogador buildJogador = jogador.GetBuild();
 
-        efeitosJogador.AddRange(buildJogador.GetClasse().GetEfeitos());
-        efeitosJogador.AddRange(buildJogador.GetRaca().GetEfeitos());
-
-        foreach (CartaDeEquipamento c in buildJogador.GetEquipamento())
+        if(buildJogador.GetClasse() != null)
         {
-            efeitosJogador.AddRange(c.GetEfeitos());
+            efeitosJogador.AddRange(buildJogador.GetClasse().GetEfeitos());
+        }
+        if(buildJogador.GetRaca() != null)
+        {
+            efeitosJogador.AddRange(buildJogador.GetRaca().GetEfeitos());
         }
 
-        foreach(Carta c in modificadoresProJogador)
+        if(buildJogador.GetEquipamento() != null)
         {
-            efeitosJogador.AddRange(c.GetEfeitos());
+            foreach (CartaDeEquipamento c in buildJogador.GetEquipamento())
+            {
+                efeitosJogador.AddRange(c.GetEfeitos());
+            }
         }
+
+        if(modificadoresProJogador != null && modificadoresProJogador.Count > 0)
+        {
+            foreach(Carta c in modificadoresProJogador)
+            {
+                efeitosJogador.AddRange(c.GetEfeitos());
+            }
+        }
+
 
         return efeitosJogador;
     }
@@ -101,9 +135,12 @@ public class Batalha : MonoBehaviour
 
         efeitosMonstro.AddRange(monstro.GetEfeitos());
 
-        foreach (Carta c in modificadoresProMonstro)
+        if(modificadoresProMonstro != null && modificadoresProMonstro.Count > 0)
         {
-            efeitosMonstro.AddRange(c.GetEfeitos());
+            foreach (Carta c in modificadoresProMonstro)
+            {
+                efeitosMonstro.AddRange(c.GetEfeitos());
+            }
         }
 
         return efeitosMonstro;

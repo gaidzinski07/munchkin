@@ -19,7 +19,7 @@ public class Jogador : MonoBehaviour
     [SerializeField]
     private BuildJogador build = new BuildJogador();
     [SerializeField]
-    private Baralho mao;
+    private MaoJogador mao;
 
     public void CreatePlayer(string nick, GeneroEnum genero)
     {
@@ -46,7 +46,7 @@ public class Jogador : MonoBehaviour
         level = 0;
         moedas = 0;
         this.build = new BuildJogador();
-        if (mao != null) mao.esvaziar();
+        if (mao != null) mao.Esvaziar();
     }
 
     public void AlterarNivel(int niveis)
@@ -54,13 +54,39 @@ public class Jogador : MonoBehaviour
         level += niveis;
         if(level < 1)
         {
-
+            Debug.Log("Você morreu " + nick);
+        }
+        else if(level >= 10)
+        {
+            Debug.Log("Você ganhou " + nick);
         }
     }
 
-    public void VenderCarta()
+    public void ReceberMoedas(int moedas)
     {
+        if (moedas <= 0) return;
+        this.moedas += moedas;
+        if(moedas >= 1000)
+        {
+            AlterarNivel(1);
+            moedas = 0;
+            Debug.Log("Subi de nível " + nick);
+        }
+    }
 
+    public void ReceberCarta(Carta carta)
+    {
+        mao.AdicionarCarta(carta);
+    }
+
+    public int GetTamanhoMao()
+    {
+        return mao.GetTamanho();
+    }
+
+    public MaoJogador GetMao()
+    {
+        return mao;
     }
 
 }

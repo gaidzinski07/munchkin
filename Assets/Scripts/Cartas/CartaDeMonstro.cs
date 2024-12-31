@@ -10,9 +10,11 @@ public class CartaDeMonstro : Carta
     private string recompensa;
     [SerializeField]
     private int niveisRetiradosDoJogador = 1;
+    [SerializeField]
+    private GameObject batalha;
     public override void ExecutarAcao()
     {
-        throw new System.NotImplementedException();
+        Instantiate(batalha, transform.parent.parent);
     }
 
     public int GetLevel()

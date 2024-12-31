@@ -68,7 +68,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -63088782, guid: 68b9935c8d6034e489afca310df21b9d, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -94,3 +94,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ab719027e908f464280e1cbb5804f79e, type: 2}
   level: 1
   recompensa: 1
+  niveisRetiradosDoJogador: 1
+  batalha: {fileID: 4326915069819644605, guid: 13507275f472d6844bc5c67c1e1ee79c, type: 3}
