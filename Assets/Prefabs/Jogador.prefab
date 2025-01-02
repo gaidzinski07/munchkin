@@ -45,10 +45,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nick: 
-  level: 0
+  level: 1
   moedas: 0
-  classe: {fileID: 0}
-  raca: {fileID: 0}
-  partesDoCorpo: 0000000001000000010000000200000002000000
-  mao: {fileID: 0}
-  pet: {fileID: 0}
+  build:
+    numClasses: 1
+    numRacas: 1
+    numEquipamentoGrande: 1
+    classe: {fileID: 0}
+    raca: {fileID: 0}
+    equipamento: []
+    genero: 0
+  mao:
+    cartas: []
+    tamanho: 5

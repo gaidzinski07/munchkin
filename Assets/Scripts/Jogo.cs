@@ -29,6 +29,10 @@ public class Jogo : MonoBehaviour
     [Header("Game Events")]
     [SerializeField]
     private GameEvent evntIniciarJogo;
+    [SerializeField]
+    private GameEvent evntIniciarTurno;
+    [SerializeField]
+    private GameEvent evntFinalizarTurno;
 
     private void Start()
     {
@@ -45,13 +49,12 @@ public class Jogo : MonoBehaviour
             BatalhaDTO dto = new BatalhaDTO();
             dto.cartaDeMonstro = (CartaDeMonstro) cartaDoTurno;
             dto.jogador = jogadores[jogadorDaVez];
-            dto.modificadoresProJogador = BuscarModificadoresDaBatalha(EstadoSelecaoCarta.JOGADOR);
-            dto.modificadoresProJogador = BuscarModificadoresDaBatalha(EstadoSelecaoCarta.MONSTRO);
+            dto.modificadoresProJogador = BuscarModificadoresNasMaosDosJogadores(EstadoSelecaoCarta.JOGADOR);
+            dto.modificadoresProMonstro = BuscarModificadoresNasMaosDosJogadores(EstadoSelecaoCarta.MONSTRO);
             return dto;
         }
         return null;
     }
-
 
     public void AdicionarJogador(string nick, GeneroEnum genero)
     {
@@ -66,8 +69,8 @@ public class Jogo : MonoBehaviour
             return;
         }
         Jogador jogador = Instantiate(playerPrefab, Vector3.zero, Quaternion.identity).GetComponent<Jogador>();
-        jogador.CreatePlayer(nick, genero);
         jogador.ResetPlayer();
+        jogador.CreatePlayer(nick, genero);
         jogadores.Add(jogador);
         podeIniciar = jogadores.Count >= minPlayers;
     }
@@ -100,17 +103,26 @@ public class Jogo : MonoBehaviour
     }
     public void IniciarPartida()
     {
-        evntIniciarJogo.Raise(this, null);
         DistribuirCartas();
         SortearOrdemDosJogadores();
-        ComecarTurno();
+        IniciarTurno();
+        evntIniciarJogo.Raise(this, jogadores);
     }
 
-    private void ComecarTurno()
+    private void IniciarTurno()
     {
         jogadorDaVez = jogadores.Count % ++jogadorDaVez;
         Jogador jogador = jogadores[jogadorDaVez];
         cartaDoTurno = baralhoDePortas.RetirarCarta();
+        evntIniciarTurno.Raise(this, cartaDoTurno);
+    }
+
+    public void FinalizarTurno()
+    {
+        baralhoDePortas.AdicionarCarta(cartaDoTurno);
+        evntFinalizarTurno.Raise(this, cartaDoTurno);
+        cartaDoTurno = null;
+        IniciarTurno();
     }
 
     public void ExecutarAcaoDaCartaRetirada()
@@ -119,14 +131,20 @@ public class Jogo : MonoBehaviour
 
         cartaDoTurno.ExecutarAcao();
     }
-    private List<Carta> BuscarModificadoresDaBatalha(EstadoSelecaoCarta beneficiado)
+
+    public void DevolverCartaParaBaralhoDeTesouro(Carta carta)
+    {
+        baralhoDeTesouros.AdicionarCarta(carta);
+    }
+
+    private List<Carta> BuscarModificadoresNasMaosDosJogadores(EstadoSelecaoCarta estado)
     {
         List<Carta> list = new List<Carta>();
         foreach (Jogador j in jogadores)
         {
-            foreach (Carta c in j.GetMao().GetCartas())
+            foreach (Carta c in j.GetMao().GetCartas().ToList())
             {
-                if(c.GetEstadoSelecao() == beneficiado)
+                if(c.GetEstadoSelecao() == estado)
                 {
                     list.Add(j.GetMao().RetirarCarta(c));
                 }

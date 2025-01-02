@@ -27,7 +27,13 @@ public class MaoJogador : ConjuntoDeCartas
         }
     }
 
-    internal int GetTamanho()
+    public override void OnAdicionarCarta(Carta carta)
+    {
+        base.OnAdicionarCarta(carta);
+        carta.SetSelecionavel(true);
+    }
+
+    public int GetTamanho()
     {
         return tamanho;
     }

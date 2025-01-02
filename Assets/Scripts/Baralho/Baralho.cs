@@ -26,4 +26,10 @@ public class Baralho : ConjuntoDeCartas
         }
         cartas = embaralhado;
     }
+
+    public override void OnAdicionarCarta(Carta carta)
+    {
+        base.OnAdicionarCarta(carta);
+        carta.SetSelecionavel(false);
+    }
 }

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01dd8e400b942f44ab0219801432cd6a, type: 3}
   m_Name: BonusClerigo
   m_EditorClassIdentifier: 
-  classe: {fileID: 0}
+  classe: {fileID: 4488301699182123474, guid: f37baa9c90870fb4c8e28ff984017263, type: 3}
   raca: {fileID: 0}
   equipamento: {fileID: 0}
   alteracaoNivel: 3
+  alteracaoFuga: 0

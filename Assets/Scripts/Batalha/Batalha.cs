@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using System;
 
 public class BatalhaDTO
 {
@@ -12,16 +14,15 @@ public class BatalhaDTO
 
 public class Batalha : MonoBehaviour
 {
-    [SerializeField]
     private Jogador jogador;
-    [SerializeField]
     private CartaDeMonstro monstro;
-    [SerializeField]
     private List<Carta> modificadoresProJogador = new List<Carta>();
-    [SerializeField]
     private List<Carta> modificadoresProMonstro = new List<Carta>();
     private int nivelJogador, nivelMonstro;
     private Dado dado = new Dado(6);
+    [SerializeField]
+    private TextMeshProUGUI txtLogBatalha;
+    bool isFuga = false;
 
     private void Start()
     {
@@ -33,38 +34,67 @@ public class Batalha : MonoBehaviour
         monstro = dto.cartaDeMonstro;
         modificadoresProJogador = dto.modificadoresProJogador;
         modificadoresProMonstro = dto.modificadoresProMonstro;
-
+        Debug.Log(dto.modificadoresProMonstro.Count + " modificadores do monstro");
     }
 
     //True = jogador ganhou
     //False = jogador perdeu
     public void RealizarBatalha()
     {
-        //int baseFuga = dado.Rolar();
+        txtLogBatalha.text = "Iniciando...\n";
         nivelMonstro = CalcularNivelMonstroBatalha();
         nivelJogador = CalcularNivelJogadorBatalha();
 
-        Debug.Log("Resultado da Batalha: " + (nivelJogador >= nivelMonstro));
+        StartCoroutine(ReportBatalha(nivelJogador >= nivelMonstro));
     }
 
     //True = jogador fugiu
     //False = jogador nao fugiu
     public void RealizarFuga()
     {
-        int nivelFuga = dado.Rolar();
-        nivelFuga += CalcularBonusFugaJogador();
+        isFuga = true;
+        txtLogBatalha.text = "Iniciando...\n";
+        nivelJogador = dado.Rolar();
+        txtLogBatalha.text += "Dado rolado: " + nivelJogador + "\n";
+        nivelJogador += CalcularBonusFugaJogador();
         nivelMonstro = monstro.GetLevel();
-
-        Debug.Log("Resultado da Fuga: " + (nivelFuga >= nivelMonstro));
+        StartCoroutine(ReportBatalha(nivelJogador >= nivelMonstro));
     }
 
     //Internal Methods
 
+    private IEnumerator ReportBatalha(bool resultado)
+    {
+        txtLogBatalha.text = "Calculando níveis...\n";
+        yield return new WaitForSeconds(0.5f);
+        txtLogBatalha.text += "Nível do Monstro: " + nivelMonstro + "\n";
+        yield return new WaitForSeconds(0.5f);
+        txtLogBatalha.text += "Nível do Jogador: " + nivelJogador + "\n";
+        txtLogBatalha.text += resultado ? "Sucesso!" : "Fracasso...";
+    }
+
+    public void ExecutarResultado()
+    {
+        bool resultado = nivelJogador >= nivelMonstro;
+
+        if(!(isFuga && resultado))
+        {
+            List<EfeitoDeBuild> efeitos = resultado ? monstro.GetEfeitosVitoriaJogador() : monstro.GetEfeitosDerrotaJogador();
+
+            foreach (EfeitoDeBuild e in efeitos) 
+            {
+                e.AplicarEfeitoAoJogador(jogador);
+            }
+        }
+        Jogo.Instance.FinalizarTurno();
+        Destroy(gameObject);
+    }
+
     private int CalcularBonusFugaJogador()
     {
         int bonus = 0;
-        List<Efeito> efeitosJogador = GetEfeitosProJogador();
-        foreach(Efeito e in efeitosJogador)
+        List<EfeitoDeBatalha> efeitosJogador = GetEfeitosProJogador();
+        foreach(EfeitoDeBatalha e in efeitosJogador)
         {
             bonus += e.CalculaBonusFuga(jogador.GetBuild());
         }
@@ -73,9 +103,9 @@ public class Batalha : MonoBehaviour
 
     private int CalcularNivelMonstroBatalha()
     {
-        List<Efeito> efeitosMonstro = GetEfeitosProMonstro();
+        List<EfeitoDeBatalha> efeitosMonstro = GetEfeitosProMonstro();
         int nivel = monstro.GetLevel();
-        foreach (Efeito e in efeitosMonstro)
+        foreach (EfeitoDeBatalha e in efeitosMonstro)
         {
             nivel += e.CalculaBonusBatalha(jogador.GetBuild());
         }
@@ -84,35 +114,38 @@ public class Batalha : MonoBehaviour
 
     private int CalcularNivelJogadorBatalha()
     {
-        List<Efeito> efeitosJogador = GetEfeitosProJogador();
+        List<EfeitoDeBatalha> efeitosJogador = GetEfeitosProJogador();
         int nivel = jogador.GetLevel();
-        foreach (Efeito e in efeitosJogador)
+        foreach (EfeitoDeBatalha e in efeitosJogador)
         {
             nivel += e.CalculaBonusBatalha(jogador.GetBuild());
         }
         return nivel;
     }
 
-    private List<Efeito> GetEfeitosProJogador()
+    private List<EfeitoDeBatalha> GetEfeitosProJogador()
     {
-        List<Efeito> efeitosJogador = new List<Efeito>();
+        List<EfeitoDeBatalha> efeitosJogador = new List<EfeitoDeBatalha>();
 
         BuildJogador buildJogador = jogador.GetBuild();
 
         if(buildJogador.GetClasse() != null)
         {
-            efeitosJogador.AddRange(buildJogador.GetClasse().GetEfeitos());
+            List<EfeitoDeBatalha> efeitosdeBatalhaClasse = GetEfeitosDeBatalhaEmListaDeEfeitos(buildJogador.GetClasse().GetEfeitos());
+            efeitosJogador.AddRange(efeitosdeBatalhaClasse);
         }
         if(buildJogador.GetRaca() != null)
         {
-            efeitosJogador.AddRange(buildJogador.GetRaca().GetEfeitos());
+            List<EfeitoDeBatalha> efeitosdeBatalhaRaca = GetEfeitosDeBatalhaEmListaDeEfeitos(buildJogador.GetRaca().GetEfeitos());
+            efeitosJogador.AddRange(efeitosdeBatalhaRaca);
         }
 
         if(buildJogador.GetEquipamento() != null)
         {
             foreach (CartaDeEquipamento c in buildJogador.GetEquipamento())
             {
-                efeitosJogador.AddRange(c.GetEfeitos());
+                List<EfeitoDeBatalha> efeitosdeBatalhaEquipamento = GetEfeitosDeBatalhaEmListaDeEfeitos(c.GetEfeitos());
+                efeitosJogador.AddRange(efeitosdeBatalhaEquipamento);
             }
         }
 
@@ -120,30 +153,46 @@ public class Batalha : MonoBehaviour
         {
             foreach(Carta c in modificadoresProJogador)
             {
-                efeitosJogador.AddRange(c.GetEfeitos());
+                List<EfeitoDeBatalha> efeitosdeBatalhaModificadores = GetEfeitosDeBatalhaEmListaDeEfeitos(c.GetEfeitos());
+                efeitosJogador.AddRange(efeitosdeBatalhaModificadores);
             }
         }
-
 
         return efeitosJogador;
     }
 
 
-    private List<Efeito> GetEfeitosProMonstro()
+    private List<EfeitoDeBatalha> GetEfeitosProMonstro()
     {
-        List<Efeito> efeitosMonstro = new List<Efeito>();
+        List<EfeitoDeBatalha> efeitosMonstro = new List<EfeitoDeBatalha>();
 
-        efeitosMonstro.AddRange(monstro.GetEfeitos());
+        List<EfeitoDeBatalha> efeitosdeBatalhaMonstro = GetEfeitosDeBatalhaEmListaDeEfeitos(monstro.GetEfeitos());
+        efeitosMonstro.AddRange(efeitosdeBatalhaMonstro);
 
         if(modificadoresProMonstro != null && modificadoresProMonstro.Count > 0)
         {
             foreach (Carta c in modificadoresProMonstro)
             {
-                efeitosMonstro.AddRange(c.GetEfeitos());
+                List<EfeitoDeBatalha> efeitosdeBatalhaModificadores = GetEfeitosDeBatalhaEmListaDeEfeitos(c.GetEfeitos());
+                efeitosMonstro.AddRange(efeitosdeBatalhaModificadores);
             }
         }
 
         return efeitosMonstro;
+    }
+
+    private List<EfeitoDeBatalha> GetEfeitosDeBatalhaEmListaDeEfeitos(List<Efeito> list)
+    {
+        List<EfeitoDeBatalha> result = new List<EfeitoDeBatalha>();
+        foreach (Efeito e in list)
+        {
+            if (e.GetType() == typeof(EfeitoDeBatalha))
+            {
+                Debug.Log("Efeito encontrado");
+                result.Add((EfeitoDeBatalha)e);
+            }
+        }
+        return result;
     }
 
 

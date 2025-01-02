@@ -20,11 +20,13 @@ public class Jogador : MonoBehaviour
     private BuildJogador build = new BuildJogador();
     [SerializeField]
     private MaoJogador mao;
+    [SerializeField]
+    private GameEvent evntAtualizarJogador;
 
     public void CreatePlayer(string nick, GeneroEnum genero)
     {
         this.nick = nick;
-        this.build.SetGenero(genero);
+        build.SetGenero(genero);
     }
     public string GetNick()
     {
@@ -36,6 +38,11 @@ public class Jogador : MonoBehaviour
         return this.level;
     }
 
+    public int GetMoedas()
+    {
+        return moedas;
+    }
+
     public BuildJogador GetBuild()
     {
         return build;
@@ -43,10 +50,11 @@ public class Jogador : MonoBehaviour
 
     public void ResetPlayer()
     {
-        level = 0;
+        level = 1;
         moedas = 0;
         this.build = new BuildJogador();
         if (mao != null) mao.Esvaziar();
+        evntAtualizarJogador.Raise(this, null);
     }
 
     public void AlterarNivel(int niveis)
@@ -60,6 +68,7 @@ public class Jogador : MonoBehaviour
         {
             Debug.Log("Você ganhou " + nick);
         }
+        evntAtualizarJogador.Raise(this, null);
     }
 
     public void ReceberMoedas(int moedas)
@@ -70,13 +79,14 @@ public class Jogador : MonoBehaviour
         {
             AlterarNivel(1);
             moedas = 0;
-            Debug.Log("Subi de nível " + nick);
         }
+        evntAtualizarJogador.Raise(this, null);
     }
 
     public void ReceberCarta(Carta carta)
     {
         mao.AdicionarCarta(carta);
+        evntAtualizarJogador.Raise(this, null);
     }
 
     public int GetTamanhoMao()

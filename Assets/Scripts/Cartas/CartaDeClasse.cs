@@ -6,7 +6,6 @@ public class CartaDeClasse : Carta
 {
     public override void ExecutarAcao()
     {
-        throw new System.NotImplementedException();
+        
     }
-    
 }
