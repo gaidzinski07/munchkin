@@ -16,6 +16,8 @@ public class BuildJogador
     private List<CartaDeEquipamento> equipamento;
     [SerializeField]
     private GeneroEnum genero;
+    [SerializeField]
+    private GameEvent evntAtualizarJogador;
 
     public BuildJogador() { }
 
@@ -27,6 +29,31 @@ public class BuildJogador
         this.genero = genero;
     }
 
+    public void SetClasse(CartaDeClasse classe)
+    {
+        this.classe = classe;
+        evntAtualizarJogador.Raise(null, null);
+    }
+
+    public void SetRaca(CartaDeRaca raca)
+    {
+        this.raca = raca;
+        evntAtualizarJogador.Raise(null, null);
+    }
+
+    public void AddEquipamento(CartaDeEquipamento equipamento)
+    {
+        this.equipamento.Add(equipamento);
+        evntAtualizarJogador.Raise(null, null);
+    }
+
+    public CartaDeEquipamento RemoverEquipamento(CartaDeEquipamento equipamento)
+    {
+        CartaDeEquipamento c = this.equipamento.Remove(equipamento) ? equipamento : null;
+        evntAtualizarJogador.Raise(null, null);
+        return c;
+    }
+
     public CartaDeClasse GetClasse()
     {
         return classe;
@@ -35,6 +62,7 @@ public class BuildJogador
     internal void SetGenero(GeneroEnum genero)
     {
         this.genero = genero;
+        evntAtualizarJogador.Raise(null, null);
     }
 
     public CartaDeRaca GetRaca()

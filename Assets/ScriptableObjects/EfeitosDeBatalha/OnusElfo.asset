@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: OnusElfo
   m_EditorClassIdentifier: 
   classe: {fileID: 0}
-  raca: {fileID: 0}
+  raca: {fileID: 1681015380936517173, guid: 38a82da1e0870564793de55ae8a14329, type: 3}
   equipamento: {fileID: 0}
   alteracaoNivel: -2
+  alteracaoFuga: 0
