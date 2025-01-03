@@ -15,11 +15,9 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private GameObject btnAcaoCartaRetirada;
     [SerializeField]
+    private GameObject btnFinalizerBuild;
+    [SerializeField]
     private Transform centerTransform;
-    [SerializeField]
-    private Transform baralhoDePortaTransform;
-    [SerializeField]
-    private Transform baralhoDeTesouroTransform;
 
     private void Start()
     {
@@ -41,50 +39,32 @@ public class UIManager : MonoBehaviour
 
     }
 
-    public void AtualizarJogador(Component sender, object data)
+    public void IniciarTurno(Component sender, object data)
     {
-        if(data is Jogador)
+        btnFinalizerBuild.SetActive(true);
+        if(data is int index)
         {
-            var jogador = (Jogador)data;
-
-            foreach(PerfilJogador p in perfilJogadores)
+            for(int i = 0; i < perfilJogadores.Count; i++)
             {
-                if (p.EhMeuJogador(jogador))
-                {
-                    p.SetJogador(jogador);
-                    break;
-                }
+                perfilJogadores[i].OnIniciarTurno(index == i);
             }
         }
     }
 
-    public void IniciarTurno(Component sender, object data)
+    public void RemoverCartaDoBaralhoDePorta(Component sender, object data)
     {
         btnAcaoCartaRetirada.SetActive(true);
-        if(data is Carta)
+        btnFinalizerBuild.SetActive(false);
+        if (data is Carta c)
         {
-            Carta carta = (Carta)data;
-            carta.transform.DOMove(centerTransform.position, 0.3f);
+            c.transform.DOMove(centerTransform.position, 0.3f);
         }
     }
 
     public void FinalizarTurno(Component sender, object data)
     {
         btnAcaoCartaRetirada.SetActive(false);
-        if (data is Carta)
-        {
-            Carta carta = (Carta)data;
-            carta.transform.DOMove(baralhoDePortaTransform.position, 0.3f);
-        }
-    }
-
-    public void LevarCartaParaBaralhoDeTesouro(Component sender, object data)
-    {
-        if (data is Carta)
-        {
-            Carta carta = (Carta)data;
-            carta.transform.DOMove(baralhoDeTesouroTransform.position, 0.3f);
-        }
+        btnFinalizerBuild.SetActive(false);
     }
 
 }

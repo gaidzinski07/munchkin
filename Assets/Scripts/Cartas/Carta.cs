@@ -100,6 +100,12 @@ public abstract class Carta : MonoBehaviour
             contextMenu.SetActive(!contextMenu.activeSelf);
         }
     }
+
+    public void CloseContextMenu()
+    {
+        contextMenu.SetActive(false);
+    }
+
     public void SetEstado(int estado)
     {
         estadoSelecao = (EstadoSelecaoCarta) estado;

@@ -25,7 +25,9 @@ public abstract class ConjuntoDeCartas
         return true;
     }
 
-    public virtual void OnAdicionarCarta(Carta carta) { }
+    public virtual void OnAdicionarCarta(Carta carta) {
+        carta.gameObject.SetActive(true);
+    }
 
     public Carta RetirarCarta()
     {
@@ -42,17 +44,21 @@ public abstract class ConjuntoDeCartas
         return carta;
     }
 
-    public virtual void OnRetirarCarta(Carta carta){ }
+    public virtual void OnRetirarCarta(Carta carta){
+        carta.CloseContextMenu();
+        carta.SetSelecionavel(false);
+        carta.SetEstado(0);
+    }
 
     public void Esvaziar()
     {
         cartas.Clear();
     }
 
-    public void EnviarCarta(ConjuntoDeCartas destino, int indexCarta)
+    public void EnviarCarta(ConjuntoDeCartas destino, Carta carta)
     {
-        if (cartas.Count <= indexCarta) return;
-        Carta carta = cartas[indexCarta];
+        Debug.Log(carta.GetNome());
+        if (!cartas.Contains(carta)) return;
         if(destino.ReceberCarta(carta))
         {
             RetirarCarta(carta);

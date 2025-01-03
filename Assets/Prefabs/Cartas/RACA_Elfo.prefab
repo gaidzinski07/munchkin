@@ -27,7 +27,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5922757736840809046}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -96,6 +96,7 @@ MonoBehaviour:
   descricao: --
   efeitos: []
   contextMenu: {fileID: 6407796706013481285}
+  imgOutline: {fileID: 2180432394366055173}
 --- !u!114 &1496303770938835686
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -8,6 +8,8 @@ public class MaoJogador : ConjuntoDeCartas
 {
     [SerializeField]
     private int tamanho = 5;
+    [SerializeField]
+    private GameEvent evntCartaRecebida;
 
     public override bool ReceberCarta(Carta carta)
     {

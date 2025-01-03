@@ -19,10 +19,21 @@ public class PerfilJogador : MonoBehaviour
     [SerializeField]
     private List<Transform> posMaoJogador;
     private Jogador jogador;
+    List<Carta> ultimaMao;
+    [SerializeField]
+    private GameObject objPonteiro;
 
     private void Awake()
     {
         gameObject.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if(jogador != null)
+        {
+            AtualizarJogador();
+        }
     }
 
     public void SetJogador(Jogador jogador)
@@ -34,27 +45,10 @@ public class PerfilJogador : MonoBehaviour
         }
         gameObject.SetActive(true);
         this.jogador = jogador;
-        maleIcon.SetActive(this.jogador.GetBuild().GetGenero() == GeneroEnum.MASCULINO);
-        femaleIcon.SetActive(this.jogador.GetBuild().GetGenero() == GeneroEnum.FEMININO);
-        nickText.text = this.jogador.GetNick();
-        nivelText.text = this.jogador.GetLevel() + "";
-        moedasText.text = this.jogador.GetMoedas() + "";
-
-        List<Carta> mao = jogador.GetMao().GetCartas();
-
-        if(mao != null && mao.Count > 0)
-        {
-            int i = 0;
-            foreach(Carta carta in mao)
-            {
-                //carta.transform.position = posMaoJogador[i++].position;
-                carta.transform.DOMove(posMaoJogador[i++].position, .5f);
-            }
-        }
-
+        AtualizarJogador();
     }
 
-    public void AtualizarJogador(Component sender, object data)
+    public void AtualizarJogador()
     {
         maleIcon.SetActive(this.jogador.GetBuild().GetGenero() == GeneroEnum.MASCULINO);
         femaleIcon.SetActive(this.jogador.GetBuild().GetGenero() == GeneroEnum.FEMININO);
@@ -62,22 +56,29 @@ public class PerfilJogador : MonoBehaviour
         nivelText.text = this.jogador.GetLevel() + "";
         moedasText.text = this.jogador.GetMoedas() + "";
 
-        List<Carta> mao = jogador.GetMao().GetCartas();
-
-        if (mao != null && mao.Count > 0)
+        if (ultimaMao != jogador.GetMao().GetCartas())
         {
-            int i = 0;
-            foreach (Carta carta in mao)
+            ultimaMao = jogador.GetMao().GetCartas();
+
+            if (ultimaMao != null && ultimaMao.Count > 0)
             {
-                //carta.transform.position = posMaoJogador[i++].position;
-                carta.transform.DOMove(posMaoJogador[i++].position, .5f);
+                int i = 0;
+                foreach (Carta carta in ultimaMao)
+                {
+                    carta.transform.DOMove(posMaoJogador[i++].position, .5f);
+                }
             }
         }
+    }
+
+    public void OnIniciarTurno(bool ehMinhaVez)
+    {
+        objPonteiro.SetActive(ehMinhaVez);
     }
 
     public bool EhMeuJogador(Jogador jogador)
     {
-        return (jogador != null && jogador.Equals(this.jogador));
+        return ((jogador != null && this.jogador != null) && jogador.GetInstanceID() == this.jogador.GetInstanceID());
     }
 
 }

@@ -32,7 +32,10 @@ public class Jogo : MonoBehaviour
     [SerializeField]
     private GameEvent evntIniciarTurno;
     [SerializeField]
+    private GameEvent evntRemoverCartaBaralhoDePorta;
+    [SerializeField]
     private GameEvent evntFinalizarTurno;
+    private int turno = 0;
 
     private void Start()
     {
@@ -42,7 +45,7 @@ public class Jogo : MonoBehaviour
         baralhoDePortas.Embaralhar();
     }
 
-    public BatalhaDTO GetBatalhaDTO()
+    public BatalhaDTO GenerateBatalhaDTO()
     {
         if(cartaDoTurno is CartaDeMonstro)
         {
@@ -97,7 +100,7 @@ public class Jogo : MonoBehaviour
         {
             for(int i = 0; i < j.GetTamanhoMao(); i++)
             {
-                baralhoDeTesouros.EnviarCarta(j.GetMao(), 0);
+                baralhoDeTesouros.EnviarCarta(j.GetMao(), baralhoDeTesouros.GetCartas()[0]);
             }
         }
     }
@@ -109,12 +112,46 @@ public class Jogo : MonoBehaviour
         evntIniciarJogo.Raise(this, jogadores);
     }
 
+    public bool EquiparCartaNaBuildDoJogadorDaVez(CartaDeBuild carta)
+    {
+        if (carta.PodeEquiparNaBuild(jogadores[jogadorDaVez])){
+            Carta retirada = jogadores[jogadorDaVez].GetMao().RetirarCarta(carta);
+            if(retirada != null)
+            {
+                carta.EquiparNaBuild(jogadores[jogadorDaVez]);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    //Habilita Motagem da Build do Jogador da vez apenas
     private void IniciarTurno()
     {
-        jogadorDaVez = jogadores.Count % ++jogadorDaVez;
+        turno++;
+        jogadorDaVez = jogadorDaVez % jogadores.Count;
         Jogador jogador = jogadores[jogadorDaVez];
+        evntIniciarTurno.Raise(this, jogadorDaVez);
+        foreach(Jogador j in jogadores)
+        {
+            foreach(Carta c in j.GetMao().GetCartas())
+            {
+                c.SetSelecionavel(j == jogador);
+            }
+        }
+    }
+    //Segunda parte do turno: remove uma carta do baralho de portas
+    public void RemoverCartaDoBaralhoDePorta()
+    {
         cartaDoTurno = baralhoDePortas.RetirarCarta();
-        evntIniciarTurno.Raise(this, cartaDoTurno);
+        foreach (Jogador j in jogadores)
+        {
+            foreach (Carta c in j.GetMao().GetCartas())
+            {
+                c.SetSelecionavel(j != jogadores[jogadorDaVez]);
+            }
+        }
+        evntRemoverCartaBaralhoDePorta.Raise(this, cartaDoTurno);
     }
 
     public void FinalizarTurno()
@@ -122,6 +159,27 @@ public class Jogo : MonoBehaviour
         baralhoDePortas.AdicionarCarta(cartaDoTurno);
         evntFinalizarTurno.Raise(this, cartaDoTurno);
         cartaDoTurno = null;
+        jogadorDaVez++;
+
+        foreach (Jogador j in jogadores)
+        {
+            foreach (Carta c in j.GetMao().GetCartas().ToList())
+            {
+                c.SetSelecionavel(false);
+                Debug.Log(c.GetEstadoSelecao());
+                if (c.GetEstadoSelecao() == EstadoSelecaoCarta.JOGADOR || c.GetEstadoSelecao() == EstadoSelecaoCarta.MONSTRO)
+                {
+                    Debug.Log("Enviando carta " + c.GetNome());
+                    c.SetSelecionavel(false);
+                    j.GetMao().EnviarCarta(baralhoDeTesouros, c);
+                }
+                else
+                {
+                    c.SetEstado(0);
+                }
+            }
+        }
+
         IniciarTurno();
     }
 
@@ -146,7 +204,7 @@ public class Jogo : MonoBehaviour
             {
                 if(c.GetEstadoSelecao() == estado)
                 {
-                    list.Add(j.GetMao().RetirarCarta(c));
+                    list.Add(c);
                 }
             }
         }

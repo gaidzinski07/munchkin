@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 [System.Serializable]
 public class Baralho : ConjuntoDeCartas
@@ -29,7 +30,10 @@ public class Baralho : ConjuntoDeCartas
 
     public override void OnAdicionarCarta(Carta carta)
     {
+        Debug.Log("Carta recebida" + carta.GetNome());
         base.OnAdicionarCarta(carta);
         carta.SetSelecionavel(false);
+        carta.transform.DOLocalMove(Vector3.zero, 0.3f);
     }
+
 }

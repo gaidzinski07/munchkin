@@ -252,7 +252,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8633410714982475825}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -322,6 +322,7 @@ MonoBehaviour:
   efeitos:
   - {fileID: 11400000, guid: 22ce23c7d25dbf640aa4d2138177a412, type: 2}
   contextMenu: {fileID: 1130844825058719212}
+  imgOutline: {fileID: 3634639668411619747}
 --- !u!114 &139975464415607906
 MonoBehaviour:
   m_ObjectHideFlags: 0

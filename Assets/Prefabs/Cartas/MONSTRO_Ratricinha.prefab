@@ -27,7 +27,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2856540731960438183}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   efeitos:
   - {fileID: 11400000, guid: ab719027e908f464280e1cbb5804f79e, type: 2}
   contextMenu: {fileID: 3618385891427131435}
-  imgOutline: {fileID: 0}
+  imgOutline: {fileID: 6672796271819202859}
   level: 1
   recompensa: 1
   batalha: {fileID: 4326915069819644605, guid: 13507275f472d6844bc5c67c1e1ee79c, type: 3}

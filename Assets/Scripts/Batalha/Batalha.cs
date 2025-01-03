@@ -28,13 +28,12 @@ public class Batalha : MonoBehaviour
     {
         Jogo jogo = Jogo.Instance;
 
-        BatalhaDTO dto = jogo.GetBatalhaDTO();
+        BatalhaDTO dto = jogo.GenerateBatalhaDTO();
 
         jogador = dto.jogador;
         monstro = dto.cartaDeMonstro;
         modificadoresProJogador = dto.modificadoresProJogador;
         modificadoresProMonstro = dto.modificadoresProMonstro;
-        Debug.Log(dto.modificadoresProMonstro.Count + " modificadores do monstro");
     }
 
     //True = jogador ganhou
@@ -188,7 +187,6 @@ public class Batalha : MonoBehaviour
         {
             if (e.GetType() == typeof(EfeitoDeBatalha))
             {
-                Debug.Log("Efeito encontrado");
                 result.Add((EfeitoDeBatalha)e);
             }
         }
