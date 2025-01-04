@@ -33,6 +33,13 @@ public class MaoJogador : ConjuntoDeCartas
     {
         base.OnAdicionarCarta(carta);
         carta.SetSelecionavel(true);
+        evntCartaRecebida.Raise(null, null);
+    }
+
+    public override void OnRetirarCarta(Carta carta)
+    {
+        base.OnRetirarCarta(carta);
+        evntCartaRecebida.Raise(null, null);
     }
 
     public int GetTamanho()

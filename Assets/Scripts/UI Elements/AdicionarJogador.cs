@@ -23,6 +23,14 @@ public class AdicionarJogador : MonoBehaviour
         AtualizarListaJogadores();
     }
 
+    public void CreateBot()
+    {
+        Jogo.Instance.AdicionarBot(inputNick.text, (GeneroEnum)dropDownGenero.value);
+        inputNick.text = "";
+        btnStart.SetActive(Jogo.Instance.GetPodeIniciar());
+        AtualizarListaJogadores();
+    }
+
     private void AtualizarListaJogadores()
     {
         string lista = "";

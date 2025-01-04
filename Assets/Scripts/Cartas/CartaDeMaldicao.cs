@@ -6,6 +6,15 @@ public class CartaDeMaldicao : Carta
 {
     public override void ExecutarAcao()
     {
-        throw new System.NotImplementedException();
+        Jogador alvo = Jogo.Instance.GetJogadorDaVez();
+        if (alvo == null) return;
+        foreach(Efeito e in efeitos)
+        {
+            if(e.GetType() == typeof(EfeitoDeBuild))
+            {
+                EfeitoDeBuild efeito = (EfeitoDeBuild)e;
+                efeito.AplicarEfeitoAoJogador(alvo);
+            }
+        }
     }
 }

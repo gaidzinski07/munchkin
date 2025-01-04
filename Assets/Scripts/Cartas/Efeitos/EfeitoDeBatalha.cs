@@ -46,4 +46,8 @@ public class EfeitoDeBatalha : Efeito
         return (isSameClasse && isSameRaca && isSameEquipamento);
     }
 
+    public override void AplicarEfeitoAoJogador(Jogador jogador)
+    {
+
+    }
 }

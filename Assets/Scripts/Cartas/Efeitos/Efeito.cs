@@ -14,4 +14,6 @@ public abstract class Efeito : ScriptableObject
     [Header("Alteração de nível:")]
     [SerializeField]
     protected int alteracaoNivel;
+
+    public abstract void AplicarEfeitoAoJogador(Jogador jogador);
 }

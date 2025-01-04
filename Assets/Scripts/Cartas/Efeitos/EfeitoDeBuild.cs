@@ -18,7 +18,7 @@ public class EfeitoDeBuild : Efeito
     [SerializeField]
     private AtributoBuildEnum atributoAfetado;
 
-    public void AplicarEfeitoAoJogador(Jogador jogador)
+    public override void AplicarEfeitoAoJogador(Jogador jogador)
     {
         if (jogador == null) return;
         BuildJogador build = jogador.GetBuild();
@@ -44,7 +44,6 @@ public class EfeitoDeBuild : Efeito
             default:
                 break;
         }
-        
     }
 
     private void DevolverCarta(Carta carta)

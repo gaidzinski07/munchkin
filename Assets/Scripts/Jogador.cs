@@ -20,6 +20,10 @@ public class Jogador : MonoBehaviour
     [SerializeField]
     private MaoJogador mao;
 
+    [Header("Eventos")]
+    [SerializeField]
+    private GameEvent evntGameOver, evntVitoria;
+
     public void CreatePlayer(string nick, GeneroEnum genero)
     {
         this.nick = nick;
@@ -56,13 +60,14 @@ public class Jogador : MonoBehaviour
     public void AlterarNivel(int niveis)
     {
         level += niveis;
+        moedas = 0;
         if(level < 1)
         {
-            Debug.Log("Você morreu " + nick);
+            evntGameOver.Raise(this, level);
         }
         else if(level >= 10)
         {
-            Debug.Log("Você ganhou " + nick);
+            evntVitoria.Raise(this, level);
         }
     }
 
@@ -70,10 +75,10 @@ public class Jogador : MonoBehaviour
     {
         if (moedas <= 0) return;
         this.moedas += moedas;
-        if(moedas >= 1000)
+        if(this.moedas >= 1000)
         {
             AlterarNivel(1);
-            moedas = 0;
+            this.moedas = 0;
         }
     }
 

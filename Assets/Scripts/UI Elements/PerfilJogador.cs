@@ -28,6 +28,12 @@ public class PerfilJogador : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    private void Start()
+    {
+        AtualizarJogador();
+        AtualizarMaoJogador(null, null);
+    }
+
     private void Update()
     {
         if(jogador != null)
@@ -55,19 +61,15 @@ public class PerfilJogador : MonoBehaviour
         nickText.text = this.jogador.GetNick();
         nivelText.text = this.jogador.GetLevel() + "";
         moedasText.text = this.jogador.GetMoedas() + "";
+    }
 
-        if (ultimaMao != jogador.GetMao().GetCartas())
+    public void AtualizarMaoJogador(Component sender, object data)
+    {
+        ultimaMao = jogador.GetMao().GetCartas();
+        int i = 0;
+        foreach (Carta carta in ultimaMao)
         {
-            ultimaMao = jogador.GetMao().GetCartas();
-
-            if (ultimaMao != null && ultimaMao.Count > 0)
-            {
-                int i = 0;
-                foreach (Carta carta in ultimaMao)
-                {
-                    carta.transform.DOMove(posMaoJogador[i++].position, .5f);
-                }
-            }
+            carta.transform.DOMove(posMaoJogador[i++].position, .5f);
         }
     }
 

@@ -51,6 +51,7 @@ MonoBehaviour:
     numClasses: 1
     numRacas: 1
     numEquipamentoGrande: 1
+    numEquipamentoPequeno: 3
     classe: {fileID: 0}
     raca: {fileID: 0}
     equipamento: []
@@ -58,3 +59,6 @@ MonoBehaviour:
   mao:
     cartas: []
     tamanho: 5
+    evntCartaRecebida: {fileID: 11400000, guid: 95c957f77022cb148a54860afefbdeaa, type: 2}
+  evntGameOver: {fileID: 11400000, guid: 8a0e5d6292fe48a408259f44d54ce482, type: 2}
+  evntVitoria: {fileID: 11400000, guid: 5b4397a5143045f49b967e552361f8d2, type: 2}

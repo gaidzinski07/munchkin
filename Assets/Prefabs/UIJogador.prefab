@@ -441,6 +441,7 @@ GameObject:
   - component: {fileID: 2761604513491697852}
   - component: {fileID: 531460771059394283}
   - component: {fileID: 6369617055871900518}
+  - component: {fileID: 8518591280520774603}
   m_Layer: 5
   m_Name: UIJogador
   m_TagString: Untagged
@@ -536,6 +537,34 @@ MonoBehaviour:
   - {fileID: 7592240735921848096}
   - {fileID: 8763022258572792956}
   objPonteiro: {fileID: 8031676627349391903}
+--- !u!114 &8518591280520774603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5322496292994129142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7243a4c8a4c52df43aced298ad6086f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 95c957f77022cb148a54860afefbdeaa, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6369617055871900518}
+        m_TargetAssemblyTypeName: PerfilJogador, Assembly-CSharp
+        m_MethodName: AtualizarMaoJogador
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5997573170863734754
 GameObject:
   m_ObjectHideFlags: 0

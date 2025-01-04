@@ -55,14 +55,15 @@ public abstract class ConjuntoDeCartas
         cartas.Clear();
     }
 
-    public void EnviarCarta(ConjuntoDeCartas destino, Carta carta)
+    public bool EnviarCarta(ConjuntoDeCartas destino, Carta carta)
     {
-        Debug.Log(carta.GetNome());
-        if (!cartas.Contains(carta)) return;
+        if (!cartas.Contains(carta)) return false;
         if(destino.ReceberCarta(carta))
         {
             RetirarCarta(carta);
+            return true;
         }
+        return false;
     }
 
 }

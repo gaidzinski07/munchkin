@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,7 @@ public class CartaDeMonstro : Carta
     [Range(1, 9), SerializeField]
     private int level;
     [SerializeField]
-    private string recompensa;
+    private int recompensa;
     [SerializeField]
     private GameObject batalha;
     [SerializeField]
@@ -35,4 +36,8 @@ public class CartaDeMonstro : Carta
         return efeitosDerrotaJogador;
     }
 
+    internal int GetRecompensa()
+    {
+        return recompensa;
+    }
 }

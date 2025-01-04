@@ -3,6 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class Jogo : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Jogo : MonoBehaviour
     [Header("Configuração de jogadores")]
     [SerializeField]
     private GameObject playerPrefab;
+    [SerializeField]
+    private GameObject botPrefab;
     [SerializeField, Range(0, 6)]
     private int maxPlayers = 6;
     [SerializeField, Range(3, 6)]
@@ -37,6 +40,36 @@ public class Jogo : MonoBehaviour
     private GameEvent evntFinalizarTurno;
     private int turno = 0;
 
+    public void OnGameOver(Component sender, object data)
+    {
+        /*if(sender is Jogador)
+        {
+            Jogador jogador = (Jogador)sender;
+
+            Jogador proximoJogador = jogadores[jogadorDaVez + 1];
+            jogadores.Remove(jogador);
+            if (jogadores.Count == 1)
+            {
+                OnVitoria(jogadores[0], 0);
+                return;
+            }
+            jogadorDaVez = jogadores.IndexOf(proximoJogador);
+            IniciarTurno();
+        }*/
+    }
+
+    public void OnVitoria(Component sender, object data)
+    {
+        if (sender is Jogador jogador)
+        {
+            if(jogador.GetLevel() >= 10 || jogadores.Count == 1)
+            {
+                JogadorVitorioso.Jogador = jogador;
+                SceneManager.LoadScene("Vitoria");
+            }
+        }
+    }
+
     private void Start()
     {
         if (Instance != null) Destroy(gameObject);
@@ -59,23 +92,40 @@ public class Jogo : MonoBehaviour
         return null;
     }
 
+    public Jogador GetJogadorDaVez()
+    {
+        return jogadores[jogadorDaVez];
+    }
+
     public void AdicionarJogador(string nick, GeneroEnum genero)
     {
-        if(jogadores.Count >= maxPlayers)
+        AdicionarPlayer(nick, genero, playerPrefab);
+    }
+
+    public void AdicionarBot(string nick, GeneroEnum genero)
+    {
+        AdicionarPlayer("[BOT] " + nick, genero, botPrefab);
+    }
+
+    private void AdicionarPlayer(string nick, GeneroEnum genero, GameObject prefab)
+    {
+        if (jogadores.Count >= maxPlayers)
         {
             Debug.LogWarning("Impossível adicionar novos jogadores. Limite atingido...");
             return;
         }
-        if(nick == "" || nick == null)
+        if (nick == "" || nick == null)
         {
             Debug.LogWarning("Preencha o nick do jogador.");
             return;
         }
-        Jogador jogador = Instantiate(playerPrefab, Vector3.zero, Quaternion.identity).GetComponent<Jogador>();
+        nick = nick;
+        Jogador jogador = Instantiate(prefab, Vector3.zero, Quaternion.identity).GetComponent<Jogador>();
         jogador.ResetPlayer();
         jogador.CreatePlayer(nick, genero);
         jogadores.Add(jogador);
         podeIniciar = jogadores.Count >= minPlayers;
+
     }
 
     public List<Jogador> GetJogadores()
@@ -166,10 +216,8 @@ public class Jogo : MonoBehaviour
             foreach (Carta c in j.GetMao().GetCartas().ToList())
             {
                 c.SetSelecionavel(false);
-                Debug.Log(c.GetEstadoSelecao());
                 if (c.GetEstadoSelecao() == EstadoSelecaoCarta.JOGADOR || c.GetEstadoSelecao() == EstadoSelecaoCarta.MONSTRO)
                 {
-                    Debug.Log("Enviando carta " + c.GetNome());
                     c.SetSelecionavel(false);
                     j.GetMao().EnviarCarta(baralhoDeTesouros, c);
                 }
@@ -195,19 +243,41 @@ public class Jogo : MonoBehaviour
         baralhoDeTesouros.AdicionarCarta(carta);
     }
 
+    public void EnviarRecompensaParaJogadorDaVez(int qtdRecompensas)
+    {
+        for(int i = 0; i < qtdRecompensas; i++)
+        {
+            baralhoDeTesouros.EnviarCarta(jogadores[jogadorDaVez].GetMao(), baralhoDeTesouros.GetCartas()[0]);
+        }
+    }
+
     private List<Carta> BuscarModificadoresNasMaosDosJogadores(EstadoSelecaoCarta estado)
     {
         List<Carta> list = new List<Carta>();
         foreach (Jogador j in jogadores)
         {
-            foreach (Carta c in j.GetMao().GetCartas().ToList())
+            if(j != jogadores[jogadorDaVez])
             {
-                if(c.GetEstadoSelecao() == estado)
+                foreach (Carta c in j.GetMao().GetCartas().ToList())
                 {
-                    list.Add(c);
+                    if(c.GetEstadoSelecao() == estado)
+                    {
+                        list.Add(c);
+                    }
                 }
             }
         }
         return list;
+    }
+
+    public void VenderCarta(CartaDeTesouro cartaDeTesouro)
+    {
+        if (jogadores[jogadorDaVez].GetMao().GetCartas().Contains(cartaDeTesouro))
+        {
+            if(jogadores[jogadorDaVez].GetMao().EnviarCarta(baralhoDeTesouros, cartaDeTesouro))
+            {
+                jogadores[jogadorDaVez].ReceberMoedas(cartaDeTesouro.GetPreco());
+            }
+        }
     }
 }

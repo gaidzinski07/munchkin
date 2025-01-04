@@ -84,6 +84,7 @@ public class Batalha : MonoBehaviour
             {
                 e.AplicarEfeitoAoJogador(jogador);
             }
+            Jogo.Instance.EnviarRecompensaParaJogadorDaVez(monstro.GetRecompensa());
         }
         Jogo.Instance.FinalizarTurno();
         Destroy(gameObject);
