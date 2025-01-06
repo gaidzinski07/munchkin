@@ -42,20 +42,40 @@ public class Jogo : MonoBehaviour
 
     public void OnGameOver(Component sender, object data)
     {
-        /*if(sender is Jogador)
+        if(sender is Jogador perdedor)
         {
-            Jogador jogador = (Jogador)sender;
 
-            Jogador proximoJogador = jogadores[jogadorDaVez + 1];
-            jogadores.Remove(jogador);
-            if (jogadores.Count == 1)
+            foreach (Carta carta in perdedor.GetMao().GetCartas())
             {
-                OnVitoria(jogadores[0], 0);
-                return;
+                perdedor.GetMao().EnviarCarta(baralhoDeTesouros, carta);
             }
-            jogadorDaVez = jogadores.IndexOf(proximoJogador);
-            IniciarTurno();
-        }*/
+
+            int cont = 0;
+            Jogador supostoVencedor = jogadores[0];
+            foreach(Jogador jogador in jogadores)
+            {
+                if(jogador.GetLevel() > 1)
+                {
+                    cont++;
+                    supostoVencedor = jogador;
+                }
+            }
+            if(cont == 1)
+            {
+                OnVitoria(this, supostoVencedor);
+            }
+            else if(cont > 1)
+            {
+                int moedasParaCadaJogadorVivo = perdedor.GetMoedas() / cont;
+                foreach(Jogador j in jogadores)
+                {
+                    if(j.GetLevel() > 1)
+                    {
+                        j.ReceberMoedas(moedasParaCadaJogadorVivo);
+                    }
+                }
+            }
+        }
     }
 
     public void OnVitoria(Component sender, object data)
@@ -209,7 +229,7 @@ public class Jogo : MonoBehaviour
         baralhoDePortas.AdicionarCarta(cartaDoTurno);
         evntFinalizarTurno.Raise(this, cartaDoTurno);
         cartaDoTurno = null;
-        jogadorDaVez++;
+        CalcularProximoJogador();
 
         foreach (Jogador j in jogadores)
         {
@@ -278,6 +298,17 @@ public class Jogo : MonoBehaviour
             {
                 jogadores[jogadorDaVez].ReceberMoedas(cartaDeTesouro.GetPreco());
             }
+        }
+    }
+
+    private void CalcularProximoJogador()
+    {
+        jogadorDaVez ++;
+        jogadorDaVez = jogadorDaVez % jogadores.Count;
+        while (jogadores[jogadorDaVez].GetLevel() < 1)
+        {
+            jogadorDaVez += 1;
+            jogadorDaVez = jogadorDaVez % jogadores.Count;
         }
     }
 }
