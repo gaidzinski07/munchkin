@@ -369,6 +369,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EQUIPAMENTO_Armadura (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5348882073447973581, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -470,6 +474,10 @@ PrefabInstance:
     - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Name
       value: EQUIPAMENTO_Armadura (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5348882073447973581, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Pivot.x
@@ -740,6 +748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "CLASSE_Cl\xE9rigo"
       objectReference: {fileID: 0}
+    - target: {fileID: 8633410714982475825, guid: f37baa9c90870fb4c8e28ff984017263, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -895,6 +907,10 @@ PrefabInstance:
     - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Name
       value: EQUIPAMENTO_Armadura (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5348882073447973581, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Pivot.x
@@ -1088,6 +1104,10 @@ PrefabInstance:
     - target: {fileID: 8633410714982475825, guid: f37baa9c90870fb4c8e28ff984017263, type: 3}
       propertyPath: m_Name
       value: "CLASSE_Cl\xE9rigo (1)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633410714982475825, guid: f37baa9c90870fb4c8e28ff984017263, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1576,6 +1596,10 @@ PrefabInstance:
     - target: {fileID: 2856540731960438183, guid: 9a718eed1c9574249adb3aa647fa9e35, type: 3}
       propertyPath: m_Name
       value: MONSTRO_Ratricinha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856540731960438183, guid: 9a718eed1c9574249adb3aa647fa9e35, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5948633482948025397, guid: 9a718eed1c9574249adb3aa647fa9e35, type: 3}
       propertyPath: m_Pivot.x
@@ -2561,6 +2585,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RACA_Elfo (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5922757736840809046, guid: 38a82da1e0870564793de55ae8a14329, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2980,7 +3008,6 @@ MonoBehaviour:
   evntIniciarJogo: {fileID: 11400000, guid: d987c14d23754bb41948c5866e565622, type: 2}
   evntIniciarTurno: {fileID: 11400000, guid: d59a244bf57447245a25a3f51b00953c, type: 2}
   evntRemoverCartaBaralhoDePorta: {fileID: 11400000, guid: 05908586f859c614e9962530cc6d71ec, type: 2}
-  evntExecutarAcaoCartaRetirada: {fileID: 11400000, guid: ee6846a9275150b4b93c7f0a3db9dcb0, type: 2}
   evntFinalizarTurno: {fileID: 11400000, guid: f274e5ca56463d543ae1db15c3d1a652, type: 2}
 --- !u!4 &602974110
 Transform:
@@ -3199,6 +3226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EQUIPAMENTO_Armadura (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5348882073447973581, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3357,9 +3388,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d71853744bab72c41bf7900cede4a9ba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e0e3fcce574e9294fa9122e6da77734b, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -3386,6 +3417,10 @@ PrefabInstance:
     - target: {fileID: 2856540731960438183, guid: 9a718eed1c9574249adb3aa647fa9e35, type: 3}
       propertyPath: m_Name
       value: MONSTRO_Ratricinha (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856540731960438183, guid: 9a718eed1c9574249adb3aa647fa9e35, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5286318717799962359, guid: 9a718eed1c9574249adb3aa647fa9e35, type: 3}
       propertyPath: m_Maskable
@@ -4097,6 +4132,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "CLASSE_Cl\xE9rigo (2)"
       objectReference: {fileID: 0}
+    - target: {fileID: 8633410714982475825, guid: f37baa9c90870fb4c8e28ff984017263, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4331,6 +4370,10 @@ PrefabInstance:
     - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Name
       value: EQUIPAMENTO_Armadura (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5348882073447973581, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Pivot.x
@@ -4573,6 +4616,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EQUIPAMENTO_Armadura (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5348882073447973581, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4685,6 +4732,10 @@ PrefabInstance:
     - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Name
       value: EQUIPAMENTO_Armadura (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5348882073447973581, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Pivot.x
@@ -5012,6 +5063,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "CLASSE_Cl\xE9rigo (3)"
       objectReference: {fileID: 0}
+    - target: {fileID: 8633410714982475825, guid: f37baa9c90870fb4c8e28ff984017263, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5033,6 +5088,10 @@ PrefabInstance:
     - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Name
       value: EQUIPAMENTO_Armadura (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5348882073447973581, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Pivot.x
@@ -5526,6 +5585,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EQUIPAMENTO_Armadura (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5348882073447973581, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5714,6 +5777,10 @@ PrefabInstance:
     - target: {fileID: 2856540731960438183, guid: 9a718eed1c9574249adb3aa647fa9e35, type: 3}
       propertyPath: m_Name
       value: MONSTRO_Ratricinha (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856540731960438183, guid: 9a718eed1c9574249adb3aa647fa9e35, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5286318717799962359, guid: 9a718eed1c9574249adb3aa647fa9e35, type: 3}
       propertyPath: m_Maskable
@@ -5913,6 +5980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RACA_Elfo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5922757736840809046, guid: 38a82da1e0870564793de55ae8a14329, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6091,6 +6162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EQUIPAMENTO_Armadura (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5348882073447973581, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6203,6 +6278,10 @@ PrefabInstance:
     - target: {fileID: 2856540731960438183, guid: 9a718eed1c9574249adb3aa647fa9e35, type: 3}
       propertyPath: m_Name
       value: MONSTRO_Ratricinha (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856540731960438183, guid: 9a718eed1c9574249adb3aa647fa9e35, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5286318717799962359, guid: 9a718eed1c9574249adb3aa647fa9e35, type: 3}
       propertyPath: m_Maskable
@@ -6532,6 +6611,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RACA_Elfo
       objectReference: {fileID: 0}
+    - target: {fileID: 5922757736840809046, guid: 38a82da1e0870564793de55ae8a14329, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6726,6 +6809,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RACA_Elfo (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5922757736840809046, guid: 38a82da1e0870564793de55ae8a14329, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6747,6 +6834,10 @@ PrefabInstance:
     - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Name
       value: EQUIPAMENTO_Armadura (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5348882073447973581, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Pivot.x
@@ -6994,6 +7085,10 @@ PrefabInstance:
     - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Name
       value: EQUIPAMENTO_Armadura
+      objectReference: {fileID: 0}
+    - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5348882073447973581, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Pivot.x
@@ -7390,6 +7485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MALDICAO_Sla
       objectReference: {fileID: 0}
+    - target: {fileID: 2856540731960438183, guid: 8f08cd6f5baa7cd4ca78f91723156098, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5437172297969114852, guid: 8f08cd6f5baa7cd4ca78f91723156098, type: 3}
       propertyPath: efeitos.Array.data[0]
       value: 
@@ -7499,6 +7598,10 @@ PrefabInstance:
     - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Name
       value: EQUIPAMENTO_Armadura (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5348882073447973581, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Pivot.x
@@ -8012,9 +8115,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1325da44e10ef13459ba467ea09af4f2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e8b13f1393d99ea41a30cb655c20ed0f, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -8041,6 +8144,10 @@ PrefabInstance:
     - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Name
       value: EQUIPAMENTO_Armadura (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5348882073447973581, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Pivot.x
@@ -9075,6 +9182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EQUIPAMENTO_Armadura (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5348882073447973581, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -9187,6 +9298,10 @@ PrefabInstance:
     - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Name
       value: EQUIPAMENTO_Armadura (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2219674699203861102, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5348882073447973581, guid: e6f952e2566e1ac41a3f11625cedcac3, type: 3}
       propertyPath: m_Pivot.x
